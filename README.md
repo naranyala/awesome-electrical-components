@@ -14,6 +14,7 @@ A curated list of electronic components, their uses, and links to datasheets —
 - [Beginner Project Ladder](#-beginner-project-ladder)
 - [Commonly Asked Questions](#-commonly-asked-beginner-questions)
 - [Learning Resources](#-learning-resources)
+- [Open-Source & Free Tools](#-open-source--free-tools)
 
 ### Component Reference
 - [Passive Components](#passive-components)
@@ -405,6 +406,141 @@ Pulse Width Modulation — rapidly switches a pin HIGH/LOW at a frequency (e.g.,
 - [ElectroBOOM](https://www.youtube.com/@ElectroBOOM) — YouTube: education through entertaining (and painful) mishaps
 - [Ben Eater](https://www.youtube.com/@BenEater) — YouTube: build a computer on a breadboard from scratch
 - [KiCad EDA](https://www.kicad.org/) — Free and open-source PCB design tool
+
+## Open-Source & Free Tools
+
+Everything you need — from schematic to soldering — without spending a cent on software.
+
+### PCB Design & Schematic Capture
+- **[KiCad](https://www.kicad.org/)** — Full EDA suite: schematic, PCB layout, Gerber export. The gold standard for open-source PCB design. [Docs](https://docs.kicad.org/)
+- **[gEDA](http://www.geda-project.org/)** — Mature open-source EDA suite. Schematic (gschem), PCB layout (PCB), Gerber viewer. [Docs](http://wiki.geda-project.org/)
+- **[Horizon EDA](https://horizon-eda.github.io/)** — Modern KiCad alternative. Schematic + PCB + pool manager. GTK-based. [Docs](https://horizon-eda.github.io/horizon-eda-docs/)
+- **[Fritzing](https://fritzing.org/)** — Breadboard view + schematic + PCB. Designed for beginners and documentation. [Docs](https://fritzing.org/handbook/)
+- **[EasyEDA](https://easyeda.com/)** — Free web-based EDA. Integrates with JLCPCB/LCSC for one-click ordering. [Docs](https://docs.easyeda.com/)
+
+### Circuit Simulation
+- **[ngspice](https://ngspice.sourceforge.io/)** — Open-source SPICE simulator. Industry-standard analog simulation. [Docs](https://ngspice.sourceforge.io/docs.html)
+- **[QUCS-S](https://qucs-s-filter-design.github.io/)** — Quite Universal Circuit Simulator with SPICE integration. RF/analog/mixed-signal. [Docs](https://github.com/ra3xdh/qucs_s)
+- **[LTspice](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)** — Free from Analog Devices. Best-in-class switching regulator simulation. (Proprietary but free.) [Docs](https://www.analog.com/en/resources/reference-designs/circuits-from-the-lab/cn0252.html)
+- **[Falstad Circuit Simulator](https://www.falstad.com/circuit/)** — Interactive web-based simulator. Instant visual feedback. Great for learning. [Docs](https://www.falstad.com/circuit/circuitjs.html)
+- **[Digital](https://github.com/hneemann/Digital)** — Open-source logic simulator. Build CPUs, ALUs, FSMs from gates. [Docs](https://github.com/hneemann/Digital/wiki)
+- **[Logisim](http://www.cburch.com/logisim/)** — Visual logic simulator for teaching digital circuits. (Original, unmaintained. Use [Logisim-evolution](https://github.com/logisim-evolution/logisim-evolution) fork.) [Docs](https://github.com/logisim-evolution/logisim-evolution/wiki)
+- **[TINA-TI](https://www.ti.com/tool/TINA-TI)** — Free from TI. SPICE-based analog simulation. (Proprietary but free.) [Docs](https://www.ti.com/tool/TINA-TI)
+
+### Firmware & Development IDEs
+- **[Arduino IDE](https://www.arduino.cc/en/software)** — The classic. Write sketches, flash to Arduino/ESP32/ATmega. [Docs](https://www.arduino.cc/en/Guide)
+- **[Arduino IDE 2.0](https://www.arduino.cc/en/software)** — Modern rewrite. Serial monitor, autocomplete, debugger. [Docs](https://docs.arduino.cc/software/ide-v2/)
+- **[PlatformIO](https://platformio.org/)** — Build system + IDE plugin. Manages libraries, boards, frameworks. Supports 1000+ boards. [Docs](https://docs.platformio.org/)
+- **[VS Code](https://code.visualstudio.com/)** — General-purpose editor. Extensions for Arduino, PlatformIO, ESP-IDF. [Docs](https://code.visualstudio.com/docs)
+- **[ESP-IDF](https://docs.espressif.com/projects/esp-idf/)** — Espressif's official framework for ESP32. FreeRTOS-based. [Docs](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/)
+- **[STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)** — Free from ST. Debugger, code generation, HAL. (Proprietary but free.) [Docs](https://wiki.st.com/stm32mcu/wiki/Getting_started_with_STM32CubeIDE)
+- **[STM32CubeMX](https://www.st.com/en/development-tools/stm32cubemx.html)** — Graphical pin/clock configurator for STM32. Generates initialization code. (Proprietary but free.)
+- **[PlatformIO CLI](https://docs.platformio.org/en/latest/core/index.html)** — Command-line build tool. CI/CD-friendly. [Docs](https://docs.platformio.org/en/latest/core/cli.html)
+
+### Embedded Languages & Frameworks
+- **[MicroPython](https://micropython.org/)** — Lean Python for microcontrollers. ESP32, STM32, RP2040, etc. [Docs](https://docs.micropython.org/)
+- **[CircuitPython](https://circuitpython.org/)** — Adafruit's fork of MicroPython. Hardware-focused libraries, USB HID, built-in REPL. [Docs](https://learn.adafruit.com/welcome-to-circuitpython)
+- **[ESPHome](https://esphome.io/)** — YAML-configured firmware for ESP32/ESP8266. Integrates with Home Assistant. [Docs](https://esphome.io/)
+- **[Tasmota](https://tasmota.github.io/)** — Open firmware for ESP-based smart plugs/switches/sensors. [Docs](https://tasmota.github.io/docs/)
+- **[Zephyr RTOS](https://www.zephyrproject.org/)** — Industrial-grade RTOS. ARM, RISC-V, x86, ARC. [Docs](https://docs.zephyrproject.org/latest/)
+- **[FreeRTOS](https://www.freertos.org/)** — Market-leading embedded RTOS. Arduino Core for ESP32 uses it. [Docs](https://www.freertos.org/Documentation.html)
+- **[RIOT OS](https://riot-os.org/)** — Microkernel RTOS for IoT. Multi-threading, networking stacks. [Docs](https://doc.riot-os.org/)
+- **[Mbed OS](https://os.mbed.com/)** — ARM's IoT OS. Broad MCU support. [Docs](https://os.mbed.com/docs/latest/)
+- **[Emscripten](https://emscripten.org/)** — Compile C/C++ to WebAssembly. Run embedded code in the browser. [Docs](https://emscripten.org/docs/getting_started/)
+
+### FPGA Development
+- **[Yosys](https://github.com/YosysHQ/yosys)** — Open-source Verilog synthesis. The backbone of open-source FPGA toolchains. [Docs](https://github.com/YosysHQ/yosys/wiki)
+- **[nextpnr](https://github.com/YosysHQ/nextpnr)** — Open-source place-and-route. Timing-driven. Supports Lattice, iCE40, ECP5, etc. [Docs](https://github.com/YosysHQ/nextpnr/wiki)
+- **[Project IceStorm](https://github.com/flopp/icestorm)** — Open-source tools for Lattice iCE40 FPGAs. Synthesis + bitstream. [Docs](https://github.com/flopp/icestorm)
+- **[Verilator](https://www.veripool.org/verilator/)** — Fast Verilog/SystemVerilog simulator. Compiles to C++. [Docs](https://www.veripool.org/verilator/manual/verilator.html)
+- **[cocotb](https://github.com/cocotb/cocotb)** — Python testbench framework for HDL simulation. Works with Verilator, Icarus, etc. [Docs](https://docs.cocotb.org/)
+- **[Icarus Verilog](https://steveicarus.github.io/iverilog/)** — Open-source Verilog simulator. Good for learning. [Docs](https://steveicarus.github.io/iverilog/)
+- **[Amaranth HDL](https://amaranth-lang.org/)** — Python-based HDL. Build hardware with Python syntax. [Docs](https://amaranth-lang.org/docs/main/)
+- **[Lattice Radiant](https://www.latticesemi.com/products/designsoftwareandipools/softwareradiant)** — Free for Lattice FPGAs. (Proprietary but free.)
+
+### 3D CAD & Enclosures
+- **[FreeCAD](https://www.freecad.org/)** — Parametric 3D modeler. Great for enclosures, mounts, brackets. [Docs](https://wiki.freecad.org/)
+- **[OpenSCAD](https://openscad.org/)** — Script-based 3D modeling. Code-driven, reproducible designs. [Docs](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual)
+- **[OpenVoronoi](https://github.com/aewallin/openvoronoi)** — Voronoi diagram library for CNC/toolpath generation.
+- **[Manifold](https://github.com/elalish/manifold)** — Fast mesh Boolean operations (CSG). For combining/ subtracting 3D shapes. [Docs](https://manifoldcad.org/)
+- **[OpenJSCAD](https://openjscad.xyz/)** — JavaScript-based parametric CAD. Browser-based. [Docs](https://openjscad.xyz/)
+
+### 3D Printing
+- **[PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424/)** — Slicer for FDM printers. Tree supports, paint-on supports, organic supports. [Docs](https://help.prusa3d.com/category/prusaslicer_202)
+- **[Cura](https://ultimaker.com/software/ultimaker-cura/)** — Ultimaker's slicer. Widely used, plugin ecosystem. [Docs](https://support.ultimaker.com/s/hc/en-us/360009792379-Cura)
+- **[OrcaSlicer](https://github.com/SoftFever/OrcaSlicer)** — Fork of PrusaSlicer/BambuStudio. Multi-printer support. [Docs](https://github.com/SoftFever/OrcaSlicer/wiki)
+- **[OctoPrint](https://octoprint.org/)** — Web interface for managing 3D printers. Webcam, G-code editor, plugins. [Docs](https://docs.octoprint.org/)
+- **[Klipper](https://www.klipper3d.org/)** — 3D printer firmware. Runs on Raspberry Pi, offloads real-time to MCU. [Docs](https://www.klipper3d.org/Overview.html)
+- **[Marlin](https://marlinfw.org/)** — Popular open-source 3D printer firmware. Runs on AVR/ARM MCUs. [Docs](https://marlinfw.org/meta/sk/)
+- **[Repetier](https://www.repetier.com/)** — Open-source firmware for FDM printers. Multi-extruder support. [Docs](https://www.repetier.com/documentation/)
+
+### Logic & Digital Simulation
+- **[Digital](https://github.com/hneemann/Digital)** — Build CPUs, ALUs, FSMs from individual gates. Interactive step-through. [Docs](https://github.com/hneemann/Digital/wiki)
+- **[Logisim-evolution](https://github.com/logisim-evolution/logisim-evolution)** — Fork of Logisim. Active development, 8-bit CPUs, teaching tools. [Docs](https://github.com/logisim-evolution/logisim-evolution/wiki)
+- **[TLC (The Logisim Creator)](https://github.com/tlac/logisim-creator)** — Next-gen logic simulator. WIP but promising.
+- **[Digitaljs](https://github.com/tilk/digitaljs)** — Browser-based digital logic simulator. [Docs](https://digitaljs.tilk.dev/)
+- **[nand2tetris tools](https://github.com/ghaiklor/nand-2-tetris)** — Build a computer from NAND gates to OS. Based on the famous course. [Docs](https://www.nand2tetris.org/)
+
+### Signal Analysis & Test
+- **[Audacity](https://www.audacityteam.org/)** — Audio editor/analyzer. Great for analyzing sensor audio output, microphone signals. [Docs](https://support.audacityteam.org/)
+- **[Inspectrum](https://github.com/miek/inspectrum)** — RF signal analysis tool. Visualize IQ data, demodulate signals. [Docs](https://github.com/miek/inspectrum)
+- **[Universal Radio Hacker (URH)](https://github.com/jopohl/urh)** — IoT protocol analysis. Decode, analyze, and replay wireless signals. [Docs](https://github.com/jopohl/urh)
+- **[GNU Radio](https://www.gnuradio.org/)** — Signal processing framework. SDR, filters, modulation/demodulation. [Docs](https://wiki.gnuradio.org/)
+- **[Sigrok](https://sigrok.org/)** — Logic analyzer / protocol analyzer. Supports 100+ protocols. [Docs](https://sigrok.org/wiki/Documentation)
+- **[PulseView](https://sigrok.org/wiki/PulseView)** — Sigrok's GUI. Capture and decode digital signals. [Docs](https://sigrok.org/wiki/PulseView)
+- **[WaveView](https://sigrok.org/wiki/WaveView)** — Sigrok's waveform viewer. Analyze captured signals.
+
+### Protocol Analyzers
+- **[Wireshark](https://www.wireshark.org/)** — Network protocol analyzer. USB, Ethernet, Bluetooth, etc. [Docs](https://www.wireshark.org/docs/)
+- **[nmap](https://nmap.org/)** — Network discovery and security auditing. [Docs](https://nmap.org/docs.html)
+- **[mosquitto](https://mosquitto.org/)** — MQTT broker. Lightweight, runs anywhere. [Docs](https://mosquitto.org/documentation/)
+- **[Mosquitto clients](https://mosquitto.org/)** — CLI tools for publishing/subscribing to MQTT topics.
+
+### Home Automation & IoT Platforms
+- **[Home Assistant](https://www.home-assistant.io/)** — Open-source home automation hub. Integrates Zigbee, Z-Wave, Wi-Fi, MQTT, 2000+ integrations. [Docs](https://www.home-assistant.io/docs/)
+- **[OpenHAB](https://www.openhab.org/)** — Java-based home automation. Device-agnostic. [Docs](https://www.openhab.org/docs/)
+- **[Domoticz](https://www.domoticz.com/)** — Lightweight home automation. Low resource usage. [Docs](https://www.domoticz.com/wiki/Main_Page)
+- **[ThingsBoard](https://thingsboard.io/)** — Open-source IoT platform. Device management, dashboards, rules engine. [Docs](https://thingsboard.io/docs/)
+- **[Node-RED](https://nodered.org/)** — Flow-based programming for IoT. Wires APIs, devices, services. [Docs](https://nodered.org/docs/)
+- **[Blynk IoT](https://blynk.io/)** — Mobile app for IoT. Drag-and-drop dashboards. (Freemium.) [Docs](https://docs.blynk.io/)
+- **[ThingSpeak](https://thingspeak.com/)** — MathWorks IoT platform. MATLAB visualization. (Free for non-commercial.) [Docs](https://thingspeak.com/pages/site_doc)
+- **[MQTT Explorer](https://mqtt-explorer.com/)** — GUI for debugging MQTT. Visualize topics in real-time. [Docs](https://mqtt-explorer.com/)
+
+### Embedded Debugging
+- **[OpenOCD](https://openocd.org/)** — On-Chip Debugger. Flash and debug ARM, RISC-V, MIPS via JTAG/SWD. [Docs](https://openocd.org/doc/html/)
+- **[GDB](https://www.gnu.org/software/gdb/)** — GNU Debugger. Step through code, inspect variables, breakpoints. [Docs](https://sourceware.org/gdb/documentation/onlinedocs/gdb/)
+- **[probe-rs](https://probe.rs/)** — Modern Rust-based debugging toolkit. Supports CMSIS-DAP, ST-Link, J-Link. [Docs](https://probe.rs/docs/)
+- **[Black Magic Probe](https://blackmagicdebug.com/)** — Open-source JTAG/SWD probe. No external debug adapter needed. [Docs](https://blackmagicdebug.com/)
+
+### Hardware Documentation & Version Control
+- **[Git](https://git-scm.com/)** — Version control. Track changes to schematics, firmware, documentation. [Docs](https://git-scm.com/doc)
+- **[GitHub](https://github.com/)** — Code hosting. Issues, PRs, Actions CI/CD. Free for public repos. [Docs](https://docs.github.com/)
+- **[GitLab](https://about.gitlab.com/)** — Alternative to GitHub. Self-hostable. Free tier includes CI/CD. [Docs](https://docs.gitlab.com/)
+- **[Gitea](https://gitea.com/)** — Self-hosted Git service. Lightweight, easy to deploy. [Docs](https://docs.gitea.com/)
+- **[HackMD](https://hackmd.io/)** — Collaborative markdown docs. Real-time editing. [Docs](https://docs.hackmd.io/)
+- **[HackMD CLI](https://github.com/hackmdio/hackmd-cli)** — Create/edit HackMD docs from terminal.
+- **[Docusaurus](https://docusaurus.io/)** — Static site generator for docs. Build a project wiki. [Docs](https://docusaurus.io/docs)
+- **[KiBot](https://github.com/INTI-CMNB/KiBot)** — CI/CD for KiCad. Auto-generate Gerbers, BOMs, schematics on commit. [Docs](https://inti-cmnb.github.io/KiBot/)
+
+### Antenna & RF Design
+- **[4NEC2](https://www.qsl.net/on5au/Homep2/4NEC2.htm)** — NEC-based antenna modeler and optimizer. Windows. (Free.) [Docs](https://www.qsl.net/on5au/Homep2/4NEC2.htm)
+- **[MMANA-GAL](https://hamwaves.com/mmana-gal/en/)** — Antenna analysis. Free, Windows. [Docs](https://hamwaves.com/mmana-gal/en/)
+- **[openEMS](https://openems.de/)** — Open-source FDTD electromagnetic field solver. For antenna/filter simulation. [Docs](https://openems.de/Start/)
+- **[Qucs](https://qucs.sourceforge.net/)** — Quite Universal Circuit Simulator. RF/AC/DC/transient. [Docs](https://qucs.sourceforge.net/)
+
+### PCB Manufacturing & Assembly
+- **[JLCPCB](https://jlcpcb.com/)** — $2 PCBs, SMT assembly. Integrates with EasyEDA/KiCad. [Docs](https://jlcpcb.com/helpArticle/440)
+- **[PCBWay](https://www.pcbway.com/)** — PCB fabrication + assembly. 5pcs from $5. [Docs](https://www.pcbway.com/help.html)
+- **[Fusion 360 Electronics](https://www.autodesk.com/products/fusion-360/electronics)** — Free for personal use. Schematic + PCB + mechanical. (Proprietary but free for hobbyists.)
+- **[OpenSCAD export to STL](https://openscad.org/)** — Export 3D models for printing enclosures.
+
+### Documentation & Knowledge
+- **[Hackster.io](https://www.hackster.io/)** — Community for hardware projects. Find inspiration, share your work. [Docs](https://www.hackster.io/news)
+- **[Instructables](https://www.instructables.com/)** — Step-by-step project guides. Electronics section is huge. [Docs](https://www.instructables.com/)
+- **[Hackaday](https://hackaday.com/)** — Hardware hacking blog. Daily inspiration. [Docs](https://hackaday.com/)
+- **[EEVblog](https://www.eevblog.com/)** — Electronics engineering blog. Dave Jones teardowns. [Docs](https://www.eevblog.com/forum/)
+- **[All About Circuits](https://www.allaboutcircuits.com/)** — Tutorials and technical articles. [Docs](https://www.allaboutcircuits.com/)
+- **[Electronics Tutorials](https://www.electronics-tutorials.ws/)** — Theory and circuit examples. [Docs](https://www.electronics-tutorials.ws/)
 
 ---
 
