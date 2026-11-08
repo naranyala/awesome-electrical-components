@@ -482,6 +482,7 @@ Everything you need — from schematic to soldering — without spending a cent 
 - **[nand2tetris tools](https://github.com/ghaiklor/nand-2-tetris)** — Build a computer from NAND gates to OS. Based on the famous course. [Docs](https://www.nand2tetris.org/)
 
 ### Signal Analysis & Test
+- **[Calculation Hub dB to Volume Calculator](https://calculation-hub.com/music/db-to-volume)** — Free explained amplitude/power ratio arithmetic for signal study; not loudness measurement, hardware calibration, or hearing-safety advice.
 - **[Audacity](https://www.audacityteam.org/)** — Audio editor/analyzer. Great for analyzing sensor audio output, microphone signals. [Docs](https://support.audacityteam.org/)
 - **[Inspectrum](https://github.com/miek/inspectrum)** — RF signal analysis tool. Visualize IQ data, demodulate signals. [Docs](https://github.com/miek/inspectrum)
 - **[Universal Radio Hacker (URH)](https://github.com/jopohl/urh)** — IoT protocol analysis. Decode, analyze, and replay wireless signals. [Docs](https://github.com/jopohl/urh)
